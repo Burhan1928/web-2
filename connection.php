@@ -1,18 +1,20 @@
 <?php
+
+use Dba\Connection as DbaConnection;
+
 require_once 'config.php';
-class Connection
- {
-        public static function make($host, $db, $user, $password)
-       {
 
-     $dsn = "mysql:host=$host;dbname=$db;charset=UTF8";
+class Connection {
+    public static function make($host, $db, $user, $password) {
+        $dsn = "mysql:host;name=$db;charset=utf-8";
 
-     try {
-     $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
-    return new PDO($dsn, $user, $password, $options);
-    } catch (PDOException $e) {
-    die($e->getMessage());
+        try {
+            $option = [PDO::ATTR_ERRMODE =>PDO::ERRMODE_EXCEPTION];
+            return new PDO($dsn, $user, $password, $option);
+        } catch (PDOexception $e) {
+            die($e->getMessage());
+        }
+        }
     }
- }
-}
-return Connection::make($host, $db, $user, $password);
+
+    return Connection::make($host, $db, $user, $password);
