@@ -71,7 +71,7 @@ if(!$user) {
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
-                        Zaidaan A Dzihnie
+                        burhan kallamullah
                     </div>
                 </nav>
             </div>
@@ -129,7 +129,7 @@ if(!$user) {
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; DANZ Company <?= date('Y') ?></div>
+                            <div class="text-muted">Copyright &copy; burhan Company <?= date('Y') ?></div>
                             <div>
                                 <a href="#">Privacy Policy</a>
                                 &middot;
